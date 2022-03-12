@@ -1,4 +1,3 @@
-import { resolveTypeReferenceDirective } from "typescript";
 import {ReactComponent as StarFull} from "assets/img/starfull.svg";
 import {ReactComponent as StarHalf} from "assets/img/starhalf.svg";
 import {ReactComponent as StarEmpty} from "assets/img/starempt.svg";
