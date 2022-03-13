@@ -8,6 +8,7 @@ import { MoviePage } from "types/movie";
 function Listing() {
 
     const [pageNumber, setPageNumber] = useState(0);
+
     const [page, setPage] = useState<MoviePage>({
         content: [],
         last: true,
@@ -18,7 +19,7 @@ function Listing() {
         first: true,
         numberOfElements: 0,
         empty: true
-    })
+    });
 
     useEffect(() => {
 
@@ -37,7 +38,7 @@ function Listing() {
                 <div className="row">
                     {page.content.map(movie => (
                         <div key = {movie.id} className="col-sm-6 col-lg-4 col-xl=3 mb-3">
-                            <MovieCard movie={movie} />
+                            <MovieCard movie = {movie} />
                         </div>
                     ))}
 
